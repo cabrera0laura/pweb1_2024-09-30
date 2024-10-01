@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula10 - Formulários</title>
+    <!---para preencher um formulkario e nessesario um titulo fixo e um campo para receber, titulo "LABEL", campo de preeencher e button "INPUT" FOR nome q ira identificar label-->
+</head>
+<body>
+    <div class="cadastro">
+            <h1>Formulário de cadastro</h1>
+            <br><br>
+            <form action=""> 
+                <!--label for identifica o id do intput 
+                name -> utilizado para associar com o js
+                placeholder exibe informação especificada
+                autofocus- faz o cursor piscar
+                autofocus required-> tamanho da caixa do input 
+                maxlenght -> tamanho da caixa do input 
+                --->
+
+                <label for="">Nome:</label>
+                <input type="text" id="inone" name="inome" placeholder="Digite o seu nome"
+                maxlength="30" autofocus required>
+                <br><br>
+                <label for="ldtnasc">Data de NAscimento: </label>
+                <input type="date" name="nidade" id="idtnasc" 
+                min="1950-01-01" max="2000-01-01">
+                <br><br>
+                <label for="ldade">Idade : </label>
+                <input type="idade" name="ldade" id="ldade" 
+                min="18" max="50">
+           
+                <label for="lmaior">Maior de Idade : </label>
+                <input type="maior" name="maior" id="lmaior" >
+                <br><br>
+                <label for="lsexo">sexo :</label>
+                <input type="radio" name="sexo" id="lsexoF" value="F" checked> Feminino
+                <input type="radio" name="sexo" id="lsexoM" value="M" checked> Masculino
+
+                <br><br>
+                <label for="Ihorarioentrevista">Horario da Entrevista</label>
+                <input type="time" name="nhorarioEntrevista"
+                    id="ihorarioentrevista">
+                <br><br>
+
+            <label for="isitepessoal"> Site Pessoal: </label>
+            <input type="url" name="isitepessoal" id="isitepessoal"
+                value="https://www.uol.com.br/">
+
+            <br><br>
+            <label for="iTelefone"> Telefone: </label>
+            <input type="tel" name="itelepone" id="iTelefone" 
+            placeholder="99 99999-9999"
+            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+            <br><br>
+            <label for="itempoExpo">Tempo de experiência: </label>
+            <input list="itempoExpo">
+                <datalist id="itempoExpo">
+                    <option value="Menos de um ano">Novato</option>
+                    <option value="entre 2 e 5 anos">Pleno</option>
+                    <option value="Mais de 5 anos">Senior</option>
+
+                </datalist>
+                <br><br>
+
+                <label for="ldatahorariodeentreista">Data/Horario entrevista :</label>
+                <input type="datetime-local" name="ndatahorarioentrvista"
+                id="ldatahorariodeentreista">
+                <br><br>
+               <label for="lemail">E-mail</label>
+               <input type="email" name="nemail"
+               id="lemail"> 
+               <br><br>
+
+                <label for="lultimoemprego">Data do ultimo emprego :</label>
+                <input type="month" name="nultimoemprego" 
+                id="lultimoemprego">
+                <br><br>
+
+                <label for="lconhecimento">Conhecimento em informática :</label>
+                <select name="iconhecimento" id="lconhecimento">  
+                <option value="win">Windows</option>
+                <option value="word">Word</option>
+                <option value="Excel">Excel</option>
+                <option value="Html">Html</option>
+                </select>
+                <br><Br>
+                <label for="larquivo">Arquivo :</label>
+                <input type="file" name="narquivo" id="larquivo" 
+                accept=".docx">
+                <br>
+                <label for="iCor">Selecione uma cor:</label>
+                <input type="color" name="iCor" id="Icor">
+                    <br>
+                    <label for="Isenha">Digite uma Senha</label>
+                    <input type="password" name="isenha" id="isenha"
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+                  </form>
+
+    </div>
+    
+</body>
+</html>
